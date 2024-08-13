@@ -1,0 +1,166 @@
+.event-management-page01 {
+  padding: 30px;
+  text-align: center;
+}
+
+.event-header01 h1 {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.event-list01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+
+.event-card01 {
+  width: 420px; /* Further increased width */
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.event-card01:hover {
+  border-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.event-image01 {
+  width: 100%;
+  height: 270px; /* Further increased height */
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.event-card01 h3 {
+  font-size: 1.4em;
+  margin: 10px 0;
+  color: #000;
+}
+
+.event-card01 p {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal201 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal2-content01 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 520px; /* Smaller width */
+  max-width: 90%;
+  height: 650px; /* Shorter height */
+  overflow-y: auto; /* Adds scroll if content exceeds height */
+}
+
+.modal2-content01 h2 {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.modal2-content01 form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal2-content01 form div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.modal2-content01 label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.modal2-content01 input,
+.modal2-content01 textarea,
+.modal2-content01 select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal2-content01 textarea {
+  resize: vertical;
+}
+
+.modal2-content01 select {
+  font-size: 16px; /* Ensure font size matches the rest of the form */
+  background-color: #fff; /* Consistent background color */
+  color: #333; /* Text color */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  box-sizing: border-box;
+  position: relative; /* Ensure dropdown is positioned relative to its container */
+  z-index: 1000; /* Ensure dropdown appears above other elements */
+}
+
+.modal2-content01 select option {
+  padding: 8px; /* Padding for dropdown options */
+}
+
+.modal2-content01 input:focus,
+.modal2-content01 textarea:focus,
+.modal2-content01 select:focus {
+  border-color: #ffcc00; /* Highlight border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow on focus */
+}
+
+.button-group01 button {
+  background-color: #ffcc00; /* Example color, adjust as needed */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-group01 button:hover {
+  background-color: #ff9900; /* Example hover color, adjust as needed */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-card01 {
+    width: 90%;
+  }
+
+  .modal2-content01 {
+    width: 95%;
+    height: auto; /* Allow modal height to adjust based on content */
+  }
+}
