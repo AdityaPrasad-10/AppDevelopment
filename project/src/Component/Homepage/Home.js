@@ -12,8 +12,6 @@ import Navbar from './Navbar';
 import Contact from './Contact';
 import Testimonials from './Test';
 import Service from './Service';
-import homeImage from './sam2.png';
-import Chatbot from '../../Chat';
 
 const Homepage = () => {
   const { user } = useAuth();
@@ -46,7 +44,7 @@ const Homepage = () => {
             Get Started
           </button>
         </div>
-        <img src={homeImage} alt="About Us" className="section-image2" />
+        
       </div>
       <About />
       <Service />
@@ -98,8 +96,6 @@ const Homepage = () => {
             <a href="https://www.linkedin.com">
               <FaLinkedin size={24} />
             </a>
-          </div>
-          <div>
           </div>
           <p>&copy; 2024 Yaska. All rights reserved.</p>
         </div>

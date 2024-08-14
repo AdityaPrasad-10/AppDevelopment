@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url('1.jpg') no-repeat center center;
+  background: url('https://images.pexels.com/photos/301987/pexels-photo-301987.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center;
   background-size: cover;
   background-color: #f0f2f5;
 }

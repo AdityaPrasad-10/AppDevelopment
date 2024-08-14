@@ -8,7 +8,7 @@ import './AdminOverview.css';
 // Custom icon for Leaflet
 const customIcon = new L.DivIcon({
   className: 'custom-icon',
-  html: '<div style="font-size:24px; color:#ff4500;"><i class="fa fa-map-marker-alt"></i></div>',
+  html: '<div style="font-size:24px; color:#1e90ff;"><i class="fa fa-map-marker-alt"></i></div>',
   iconSize: [32, 32],
   iconAnchor: [16, 32],
   popupAnchor: [0, -32]
@@ -48,9 +48,6 @@ const MetricsSection = ({ metrics, onEdit }) => (
     </div>
   </>
 );
-
-
-
 
 // StatItem Component
 const StatItem = ({ number, label }) => (
@@ -149,8 +146,8 @@ const AdminOverview = () => {
 
   return (
     <div className="overview1">
-      <h1>YASKA CORPORATE EVENTS</h1>
-      <p className="overview-description">Overview of key metrics and information for your corporate events.</p>
+      <h1>EVENTIDA CORPORATE EVENTS</h1>
+      <h2 className="overview-description">Overview of key metrics and information for your corporate events.</h2>
 
       <MetricsSection
         metrics={keyMetrics}
@@ -188,7 +185,7 @@ const AdminOverview = () => {
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey="value" fill="#8884d8" />
+            <Bar dataKey="value" fill="#5bc0de" />
           </BarChart>
         </div>
         <PieChart width={400} height={400}>
@@ -198,11 +195,11 @@ const AdminOverview = () => {
             dataKey="value"
             nameKey="name"
             outerRadius={150}
-            fill="#8884d8"
+            fill="#5bc0de"
             label
           >
             {pieData.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#FF6666'][index]} />
+              <Cell key={`cell-${index}`} fill={['#0275d8', '#5bc0de', '#5cb85c', '#f0ad4e', '#d9534f'][index]} />
             ))}
           </Pie>
           <Tooltip />
@@ -228,11 +225,11 @@ const AdminOverview = () => {
               dataKey="value"
               nameKey="name"
               outerRadius={150}
-              fill="#8884d8"
+              fill="#5bc0de"
               label
             >
               {pieData1.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={['#0088FE', '#FF8042'][index]} />
+                <Cell key={`cell-${index}`} fill={['#0275d8', '#5bc0de', '#5cb85c'][index]} />
               ))}
             </Pie>
             <Tooltip />
@@ -240,35 +237,17 @@ const AdminOverview = () => {
           </PieChart>
         </div>
       </div>
-      <div className='map-head'>Our Corporate Events</div>
 
       <div className="map-container">
-        <MapContainer 
-          center={[20, 0]} 
-          zoom={2} 
-          style={{ height: '400px', width: '100%' }}
-          zoomControl={false}
-          dragging={false}
-          scrollWheelZoom={false}
-          doubleClickZoom={false}
-          boxZoom={false}
-        >
+        <h2>Global Reach</h2>
+        <MapContainer center={[20, 0]} zoom={2} style={{ height: '400px', width: '100%' }}>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='<a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
-          {locations.customers.map(customer => (
-            <Marker key={customer.id} position={[customer.lat, customer.lng]} icon={customIcon}>
-              <Popup>
-                {customer.country}<br />({customer.lat}, {customer.lng})
-              </Popup>
-            </Marker>
-          ))}
-          {locations.visitors.map(visitor => (
-            <Marker key={visitor.id} position={[visitor.lat, visitor.lng]} icon={customIcon}>
-              <Popup>
-                {visitor.country}<br />({visitor.lat}, {visitor.lng})
-              </Popup>
+          {locations.customers.map(location => (
+            <Marker key={location.id} position={[location.lat, location.lng]} icon={customIcon}>
+              <Popup>{location.country}</Popup>
             </Marker>
           ))}
         </MapContainer>

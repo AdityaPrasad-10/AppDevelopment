@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
-import aboutImage from './sam.avif';
 
 const About = () => {
   return (
@@ -15,7 +14,7 @@ const About = () => {
           </p>
           <Link to="/team" className="team-button">Meet Our Team</Link>
         </div>
-        <img src={aboutImage} alt="About Us" className="section-image1" />
+        <img src="https://images.pexels.com/photos/7648044/pexels-photo-7648044.jpeg?auto=compress&cs=tinysrgb&w=600" alt="About Us" className="section-image1" />
       </div>
     </section>
   );

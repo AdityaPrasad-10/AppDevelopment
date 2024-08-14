@@ -14,7 +14,7 @@
 }
 
 .navbar-logo1 {
-    color: #000; /* Default color is black */
+    color: white; /* Default color is black */
     cursor: pointer;
     text-decoration: none;
     font-size: 2.5rem;
@@ -36,7 +36,7 @@
 }
 
 .navbar1.black-background {
-    background: black;
+    background: white;
 }
 
 .navbar1.black-background .navbar-logo1,
@@ -47,7 +47,7 @@
 .navbar1.black-background .nav-links1:hover,
 .navbar1.black-background .nav-links1:focus,
 .navbar1.black-background .nav-links1.active {
-    color: #fff; /* Keep text white on hover/focus/active state */
+    color: black; /* Keep text white on hover/focus/active state */
     transform: scale(1.02);
     outline: none;
 }
@@ -63,6 +63,7 @@
     padding: 0 24px;
     margin: 0 auto;
     position: relative;
+    
 }
 
 /* Navigation menu styling */
@@ -87,7 +88,7 @@
 
 /* Navigation Links Styling */
 .nav-links1 {
-    color: #000; /* Default color is black */
+    color: white; /* Default color is black */
     display: flex;
     align-items: center;
     text-decoration: none;

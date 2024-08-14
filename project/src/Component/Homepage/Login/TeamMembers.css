@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: url('../samback.jpg') no-repeat center center;
+  background: url('https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center;
   background-size: cover;
   background-color: #161623;
   min-height: 100vh;

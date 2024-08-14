@@ -4,21 +4,21 @@ import './Test.css';
 
 const testimonials = [
   {
-    name: "Emilia Clarke",
+    name: "Anonymous",
     title: "Senior Event Planner at Global Corp",
     quote: "Easy Tutorials managed our recent corporate event with remarkable precision. Their expertise in event planning and execution ensured a seamless experience from start to finish. Highly recommend their services for any corporate event.",
     avatarClass: "prabhakarAvatar",
     rating: 4
   },
   {
-    name: "Samantha Ruth",
+    name: "Anonymous",
     title: "Director of Operations at Tech Solutions",
     quote: "We were extremely impressed with Easy Tutorials' handling of our corporate event. Their innovative approach and meticulous planning made the event a standout success. They are our go-to team for future events.",
     avatarClass: "bharatAvatar",
     rating: 5
   },
   {
-    name: "Kashmira Pardeshi",
+    name: "Anonymous",
     title: "Event Manager at Creative Enterprises",
     quote: "The corporate event organized by Easy Tutorials exceeded our expectations. Their attention to detail and professional demeanor ensured everything went off without a hitch. We look forward to collaborating with them again.",
     avatarClass: "avinashAvatar",

@@ -33,7 +33,7 @@ const Navbar = () => {
           className={`navbar-logo1 ${logoActive ? 'logo-active' : ''}`} 
           onClick={handleLogoClick}
         >
-          YASKA
+          EVENTIDA
         </div>
         <ul className="nav-menu1">
           {[
